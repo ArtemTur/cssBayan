@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Jennie on the Block';
+    src: url("/cssBayan/assets/fonts/Jennie\ on\ the\ Block.ttf"); /* Путь к файлу со шрифтом */
+   }
+
+body {
+    background-color:gainsboro;
+}
+
+.text, .title {
+    font-family: 'Jennie on the Block';
+}
