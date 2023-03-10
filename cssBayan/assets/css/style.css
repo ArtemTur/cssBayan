@@ -11,7 +11,7 @@
     }
 
     .container {
-        width: 80%;
+        margin: 0 10%;
         color: blue;
     }
 
@@ -19,15 +19,12 @@
         color: #000;
     }
 
-.string {
-    display: flex;
-    justify-content: space-between;
-    height: 3em;
-}
-
-    .string,
-    .title {
-        padding-left: 10%;
+    .string {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3.5em;
+        border-top-style: solid;
     }
 
     .title {
@@ -44,12 +41,19 @@
         display: block;
     }
 
-    .text{
-    font-size: 1.5em;
+    .text {
+        font-size: 1.5em;
     }
 
     .cross {
+        height: 30px;
+        width: 30px;
         display: none;
+    }
+
+    .lines {
+        height: 30px;
+        width: 30px;
     }
 
     .accordion:hover .cross {
