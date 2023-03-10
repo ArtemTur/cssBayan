@@ -1,12 +1,62 @@
-@font-face {
-    font-family: 'Jennie on the Block';
-    src: url("/cssBayan/assets/fonts/Jennie\ on\ the\ Block.ttf"); /* Путь к файлу со шрифтом */
-   }
+@media screen and (max-width: 1920px) {
 
-body {
-    background-color:gainsboro;
+    @font-face {
+        font-family: 'Jennie on the Block';
+        src: url("/cssBayan/assets/fonts/Jennie\ on\ the\ Block.ttf");
+    }
+
+    body {
+        background-color: gainsboro;
+        font-family: 'Jennie on the Block'
+    }
+
+    .container {
+        width: 80%;
+        color: blue;
+    }
+
+    .container:hover {
+        color: #000;
+    }
+
+.string {
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
 }
 
-.text, .title {
-    font-family: 'Jennie on the Block';
+    .string,
+    .title {
+        padding-left: 10%;
+    }
+
+    .title {
+        color: #000;
+        font-size: 2.5em;
+    }
+
+    .picture {
+        display: none;
+        text-align: center;
+    }
+
+    .accordion:hover .picture {
+        display: block;
+    }
+
+    .text{
+    font-size: 1.5em;
+    }
+
+    .cross {
+        display: none;
+    }
+
+    .accordion:hover .cross {
+        display: block;
+    }
+
+    .accordion:hover .lines {
+        display: none;
+    }
 }
