@@ -45,12 +45,10 @@
         font-size: 1.5em;
         appearance: none;
         display: none;
-
     }
 
     .text+label+div {
         display: none;
-
     }
 
     .text:hover+label+div {
@@ -73,9 +71,9 @@
         margin-left: 23em;
     }
 
-.text:hover+label::after {
-    content: url(/assets/img/svg/xmark-solid.svg);
+    .text:hover+label::after {
+        content: url(/assets/img/svg/xmark-solid.svg);
         margin-left: 23em;
-}
+    }
 
 }
