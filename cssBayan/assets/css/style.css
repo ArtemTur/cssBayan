@@ -20,67 +20,62 @@
         cursor: pointer;
     }
 
-    .container:hover .lines {
-        display: block;
-    }
-
-    .string {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 3.5em;
-        border-top-style: solid;
-    }
-
     .title {
         color: #000;
-        font-size: 2.5em;
+        font-size: 3em;
+    }
+
+    .accordion .text+label {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        height: 2em;
+        font-size: 2em;
+        border-top: solid .1em rgb(190, 208, 209);
+        padding-top: 0.8em;
     }
 
     .picture {
         display: none;
         text-align: center;
-    }
-
-    .accordion:hover .picture {
-        display: block;
+        cursor: pointer;
     }
 
     .text {
         font-size: 1.5em;
-    }
-
-    .cross {
-        height: 2.5em;
-        width: 2.5em;
+        appearance: none;
         display: none;
+
     }
 
-    .lines {
+    .text+label+div {
         display: none;
-        height: 2em;
-        width: 2em;
+
     }
 
-    .accordion:hover .cross {
+    .text:hover+label+div {
         display: block;
+        transition: 3s ease;
     }
 
-    .accordion:hover .lines {
-        display: none;
-    }
-
-    .accordion:checked .picture{
+    .text:checked+label+div {
         display: block;
+        transition: 2s ease;
     }
 
-    #ac-1 .picture{
-        display: block;
+    .accordion:hover .text:checked+label::after {
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        margin-left: 23em;
     }
 
-    #ac-1:target:checked .picture{
-        display: none;
+    .accordion:hover label::after {
+        content: url(/cssBayan/assets/img/svg/grip-lines-vertical-solid.svg);
+        margin-left: 23em;
     }
 
-     
+.text:hover+label::after {
+    content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        margin-left: 23em;
+}
+
 }
