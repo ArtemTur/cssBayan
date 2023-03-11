@@ -2,12 +2,12 @@
 
     @font-face {
         font-family: 'Jennie on the Block';
-        src: url("/cssBayan/assets/fonts/Jennie\ on\ the\ Block.ttf");
+        src: url("/assets/fonts/Jennie\ on\ the\ Block.ttf");
     }
 
     body {
         background-color: gainsboro;
-        font-family: 'Jennie on the Block'
+        font-family: 'Jennie on the Block';
     }
 
     .container {
@@ -64,17 +64,17 @@
     }
 
     .accordion:hover .text:checked+label::after {
-        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        content: url(/assets/img/svg/xmark-solid.svg);
         margin-left: 23em;
     }
 
     .accordion:hover label::after {
-        content: url(/cssBayan/assets/img/svg/grip-lines-vertical-solid.svg);
+        content: url(/assets/img/svg/grip-lines-vertical-solid.svg);
         margin-left: 23em;
     }
 
 .text:hover+label::after {
-    content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+    content: url(/assets/img/svg/xmark-solid.svg);
         margin-left: 23em;
 }
 
