@@ -17,6 +17,7 @@
 
     .container:hover {
         color: #000;
+        cursor: pointer;
     }
 
     .container:hover .lines {
@@ -50,15 +51,15 @@
     }
 
     .cross {
-        height: 30px;
-        width: 30px;
+        height: 2.5em;
+        width: 2.5em;
         display: none;
     }
 
     .lines {
         display: none;
-        height: 30px;
-        width: 30px;
+        height: 2em;
+        width: 2em;
     }
 
     .accordion:hover .cross {
@@ -68,4 +69,18 @@
     .accordion:hover .lines {
         display: none;
     }
+
+    .accordion:checked .picture{
+        display: block;
+    }
+
+    #ac-1 .picture{
+        display: block;
+    }
+
+    #ac-1:target:checked .picture{
+        display: none;
+    }
+
+     
 }
