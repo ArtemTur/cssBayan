@@ -2,7 +2,7 @@
 
     @font-face {
         font-family: 'Jennie on the Block';
-        src: url('/assets/fonts/Jennie\ on\ the\ Block.ttf');
+        src: url('/cssBayan/assets/fonts/Jennie\ on\ the\ Block.ttf');
     }
 
     body {
@@ -60,17 +60,17 @@
     }
 
     .accordion:hover .text:checked+label::after {
-        content: url(/assets/img/svg/xmark-solid.svg);
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
         margin-left: 23em;
     }
 
     .accordion:hover label::after {
-        content: url(/assets/img/svg/grip-lines-vertical-solid.svg);
+        content: url(/cssBayan/assets/img/svg/grip-lines-vertical-solid.svg);
         margin-left: 23em;
     }
 
     .text:hover+label::after {
-        content: url(/assets/img/svg/xmark-solid.svg);
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
         margin-left: 23em;
     }
 
