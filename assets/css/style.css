@@ -2,7 +2,7 @@
 
     @font-face {
         font-family: 'Jennie on the Block';
-        src: url("/assets/fonts/Jennie\ on\ the\ Block.ttf");
+        src: url(/assets/fonts/Jennie\ on\ the\ Block.ttf);
     }
 
     body {
