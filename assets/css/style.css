@@ -1,0 +1,173 @@
+@media screen and (max-width: 1920px) {
+
+    @font-face {
+        font-family: 'Jennie on the Block';
+        src: url('/cssBayan/assets/fonts/Jennie\ on\ the\ Block.ttf');
+    }
+
+    body {
+        background-color: gainsboro;
+        font-family: 'Jennie on the Block';
+    }
+
+    .container {
+        margin: 0 10%;
+        color: blue;
+    }
+
+    .container:hover {
+        color: #000;
+        cursor: pointer;
+    }
+
+    .title {
+        color: #000;
+        font-size: 3vw;
+    }
+
+    .accordion .text+label {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        height: 1em;
+        font-size: 2vw;
+        border-top: solid .1em rgb(190, 208, 209);
+        padding-top: 0.5em;
+    }
+
+    .picture {
+        opacity: 0;
+        transform: scale(0);
+        text-align: center;
+        cursor: pointer;
+        height: 0;
+    }
+
+    img {
+        height: 30%;
+        width: 30%;
+    }
+
+    .text {
+        appearance: none;
+    }
+
+    .text:hover+label+.picture {
+        opacity: 1;
+        transform: scale(1);
+        transition: .4s ease-in-out;
+        height: 100%;
+    }
+
+    .text:checked+label+.picture {
+        opacity: 1;
+        transform: scale(1);
+        transition: .4s ease-in-out;
+        height: 100%;
+    }
+
+    .text:checked+label {
+        color: #000;
+    }
+
+    .first:hover .picture {
+        opacity: 1;
+        transform: scale(1);
+        height: 100%;
+        transition: .4s ease-in-out;
+    }
+
+    .second:hover .picture {
+        opacity: 1;
+        transform: scale(1);
+        height: 100%;
+        transition: .4s ease-in-out;
+    }
+
+    .third:hover .picture {
+        opacity: 1;
+        transform: scale(1);
+        height: 100%;
+        transition: .4s ease-in-out;
+    }
+
+    .fourth:hover .picture {
+        opacity: 1;
+        transform: scale(1);
+        height: 100%;
+        transition: .4s ease-in-out;
+    }
+
+    .fifth:hover .picture {
+        opacity: 1;
+        transform: scale(1);
+        height: 100%;
+        transition: .4s ease-in-out;
+    }
+
+    .accordion:hover .text:checked+label::after {
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        margin-left: 23em;
+    }
+
+    .accordion:hover label::after {
+        content: url(/cssBayan/assets/img/svg/grip-lines-vertical-solid.svg);
+        margin-left: 23em;
+    }
+
+    .text:hover+label::after {
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        margin-left: 23em;
+    }
+
+    .first:hover label::after {
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        margin-left: 23em;
+    }
+
+    .second:hover label::after {
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        margin-left: 23em;
+    }
+
+    .third:hover label::after {
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        margin-left: 23em;
+    }
+
+    .fourth:hover label::after {
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        margin-left: 23em;
+    }
+
+    .fifth:hover label::after {
+        content: url(/cssBayan/assets/img/svg/xmark-solid.svg);
+        margin-left: 23em;
+    }
+
+}
+
+
+@media screen and (max-width: 820px) {
+
+    .title {
+        font-size: 4vw;
+    }
+
+    .accordion .text+label {
+        font-size: 3vw;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .title {
+        font-size: 5vw;
+    }
+
+    .accordion .text+label {
+        font-size: 4vw;
+    }
+}
